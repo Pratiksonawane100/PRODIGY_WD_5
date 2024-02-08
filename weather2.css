@@ -1,0 +1,175 @@
+body{
+    /* background: url(https://wallpaper-house.com/data/out/12/wallpaper2you_484214.jpg); */
+    background: url(https://wallpapers.com/images/hd/weather-background-u3a9sa6qvtm1mo0w.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.navbar2{
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+.search{
+    position: relative;
+    left: 200px;
+    width: 400px;
+    top: 50px;
+    z-index: 10;
+    border-radius: 11px;
+}
+.search1{
+    position: relative;
+    left: 200px;
+    top: 50px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 10px;
+    z-index: 11;
+}
+.nav1{   
+    margin-left: 20px;
+}
+.glass{
+    position: absolute;
+    left: 320px;
+    top: 100px;
+    width: 900px;
+    height: 600px;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    /* background-color: aqua; */
+}
+.card{
+    background: none;
+    /* background-color: aqua; */
+}
+.temp10{
+    position: relative;
+    top: 130px;
+    left: 200px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 900;
+}
+.content li{
+    display: flex;
+}
+.city1{
+    position: relative;
+    top: 85px;
+    left: -240px;
+    color: rgb(254, 254, 254);
+}
+.temp3{
+    position: relative;
+    left: 40px;
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+}
+.deg{
+    position: relative;
+    left: 40px;
+    top: -30px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 60px;
+}
+.body1{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 60px;
+    margin: 25px;
+}
+.body2{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 60px;
+    margin: 25px;
+}
+.body li{
+    color: white;
+}
+.text{
+    color: white;
+}
+.text2{
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    position: absolute;
+    top: 110px;
+    left: 400px;
+    height: 70px;
+}
+/* Default styles */
+/* Add your default styles here */
+
+/* Media query for devices with a maximum width of 768 pixels */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .navbar-brand {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .navbar-toggler {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .glass {
+        padding: 20px; /* Add padding to the container for better spacing */
+    }
+
+    .city1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .temp10 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .temp3 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+
+    .deg {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .content {
+        column-count: 1; /* Show content in one column for smaller screens */
+    }
+
+    .body,
+    .body1,
+    .body2 {
+        display: block; /* Show body elements as block for smaller screens */
+    }
+
+    .text {
+        margin-bottom: 10px; /* Add margin bottom for better spacing */
+    }
+
+    .text2 {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}

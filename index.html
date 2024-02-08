@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="weather2.css">
+    <!-- <link rel="stylesheet" href="weather1.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar2">
+            <div class="container-fluid nav1">
+                <a class="navbar-brand" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="#">E-Mail</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex" role="search">
+                        <input id="city" class="form-control me-2 search" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success search1" type="submit" id="Submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="glass card">
+        <form class="d-flex" role="search">
+            <input id="city" class="form-control me-2 search" type="search" placeholder="Search"
+                aria-label="Search">
+            <button class="btn btn-outline-success search1" type="submit" id="Submit">Search</button>
+        </form>
+        <h1 class="city1 my-4 text-sm-center">Weather For <span id="cityname"></span></h1>
+
+        <div class="col card">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal temp10">Temperature</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title"><span class="temp3" id="temp2"> </span><small
+                            class="text-body-secondary fw-light"><sup><span class="deg">&#8451;</span></sup></small>
+                    </h1>
+                    <!-- <img class="icon" src="https://cdn-icons-png.flaticon.com/128/2932/2932445.png" alt=""> -->
+                    <ul class="list-unstyled mt-3 mb-4 content">
+                        <div class="body">
+                            <div class="text">
+                                <li>Temprature is </li>
+                                <span class="text2" id="temp"> </span>
+                            </div>
+                            <div class="text">
+                                <li>Min Temperature is </li>
+                                <span class="text2" id="min_temp"> </span>
+                            </div>
+                            <div class="text">
+                                <li>Max Temperature is </li>
+                                <span class="text2" id="max_temp"></span>
+                            </div>
+                            <div class="text">
+                                <li>Cloud PCT is </li>
+                                <span class="text2" id="cloud_pct"></span>
+                            </div>
+                        </div>
+                        <div class="body1">
+                            <div class="text">
+                                <li>Humidity</li>
+                                <span class="text2" id="humidity"> </span>
+                            </div>
+                            <div class="text">
+                                <li>Wind Degrees</li>
+                                <span class="text2" id="wind_degrees"> </span>
+                            </div>
+                            <div class="text">
+                                <li>Sunset Time is</li>
+                                <span class="text2" id="sunset"> </span>
+                            </div>
+                            <div class="text">
+                                <li>Sunrise Time is</li>
+                                <span class="text2" id="sunrise"> </span>
+                            </div>
+                        </div>
+                        <div class="body2">
+                            <div class="text">
+                                <li>Wind speed is</li>
+                                <span class="text2" id="wind_speed"> </span>
+                            </div>
+                            <div class="text">
+                                <li>Feels like</li>
+                                <span class="text2" id="feels_like"> </span>
+                            </div>
+
+                        </div>
+                    </ul>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="weatherapi3.js"></script>
+</body>
+
+</html>
